@@ -11,14 +11,13 @@ public class Pres2 {
     public static void  main(String[] args) throws Exception {
 
         Scanner scanner = new Scanner(new File("config.txt"));
-        //lire la première ligne de le fichier config.txt
+        //lecture de la première ligne du fichier config.txt
         String daoClassName = scanner.nextLine();
-        // chercher la class est ce qui elle existe , si la class existe il va charger le bytecode dans au mémoire
+        // chercher la class si elle existe ou pas, si elle existe il va charger le bytecode en mémoire
         Class cDao = Class.forName(daoClassName);
         //crée un objet de type cet class
         IDao dao = (IDao) cDao.newInstance();
 
-        // la même chose
         String metierClassName = scanner.nextLine();
         Class cMetier = Class.forName(metierClassName);
         IMetier metier = (IMetier) cMetier.newInstance();
