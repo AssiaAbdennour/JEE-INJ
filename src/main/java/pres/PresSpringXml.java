@@ -3,7 +3,7 @@ package pres;
 import metier.IMetier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+//by assia abd
 public class PresSpringXml {
     public static void main(String[] args) {
         // nous avons crée ici un objet de type ApplicationcContext
